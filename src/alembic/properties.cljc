@@ -72,7 +72,7 @@
   the point list, that `.faceIndices` winds a particular way) is NOT here
   either — this returns named, typed arrays, and `AbcGeom` is the layer that
   would say what the names mean."
-  (:require [ogawa.core :as ogawa]))
+  (:require [kotoba.lang.text] [ogawa.core :as ogawa]))
 
 ;; ---------------------------------------------------------------------------
 ;; bytes
@@ -263,7 +263,7 @@
 (defn find-property
   "The property at `path` (e.g. `\"/.geom/P\"`), or nil."
   [props path]
-  (let [segs (remove empty? (clojure.string/split path #"/"))]
+  (let [segs (remove empty? (kotoba.lang.text/split path #"/"))]
     (loop [ps props segs segs]
       (when-let [s (first segs)]
         (when-let [hit (first (filter #(= s (:property/name %)) ps))]

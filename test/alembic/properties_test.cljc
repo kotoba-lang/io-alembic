@@ -6,7 +6,7 @@
   only cross-check available without a real `.abc`, and is stated here rather
   than implied."
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure.string :as string]
+            [kotoba.lang.text :as string]
             [ogawa.core :as ogawa]
             [alembic.properties :as p]))
 

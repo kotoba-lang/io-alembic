@@ -49,7 +49,7 @@
   2^53 bytes (8 petabytes). The high bit that tags a child as data is read
   from the top byte rather than by 64-bit arithmetic, because a JavaScript
   number cannot hold 0x8000000000000000."
-  (:require [clojure.string :as string]))
+  (:require [kotoba.lang.text :as string]))
 
 (def magic [0x4f 0x67 0x61 0x77 0x61])   ; "Ogawa"
 (def version 1)
