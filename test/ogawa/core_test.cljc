@@ -1,6 +1,6 @@
 (ns ogawa.core-test
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure.string :as string]
+            [kotoba.lang.text :as string]
             [ogawa.core :as ogawa]))
 
 (defn- le

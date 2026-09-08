@@ -1,6 +1,6 @@
 (ns alembic.objects-test
   (:require [clojure.test :refer [deftest is testing]]
-            [clojure.string :as string]
+            [kotoba.lang.text :as string]
             [ogawa.core :as ogawa]
             [alembic.objects :as abc]))
 

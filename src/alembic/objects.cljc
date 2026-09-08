@@ -42,7 +42,7 @@
   not read. `metadata-pairs` does the obvious split and says in its docstring
   that it is a convenience, not a verified decoding."
   (:require [ogawa.core :as ogawa]
-            [clojure.string :as string]))
+            [kotoba.lang.text :as string]))
 
 (def minimum-archive-version
   "`ArImpl.cpp` refuses anything below this."
